@@ -1,0 +1,161 @@
+.mission-panel {
+  margin: auto;
+  /* margin-top: 5rem; */
+  padding: 3rem 0;
+  /* margin-bottom: 10rem; */
+  width: 1200px;
+}
+.panel-decr {
+  font-size: 1.75rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 0 0 4rem 0;
+}
+.mission-planets {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8rem;
+}
+
+.time-taken {
+  padding: 3rem 0.5rem;
+  margin: 1rem 0;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  width: 400px;
+  position: relative;
+  margin: 2rem auto 2rem auto;
+  border: 1px solid black;
+  border-radius: 7px;
+}
+
+footer {
+  background-color: #181818;
+  color: #f2f2f2;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.5rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+.btn-cntr {
+  text-align: center;
+  padding: 6rem 0 4rem 0;
+}
+
+.btn-fd-flcn {
+  transition: all 0.1s ease-in-out;
+  padding: 1rem 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border-radius: 3px;
+  border: 1px solid black;
+  box-shadow: 0px 5px 10px #aaa;
+  font-family: "Source Code Pro", monospace;
+  cursor: pointer;
+}
+
+.btn-fd-flcn:active {
+  box-shadow: none;
+}
+
+@media (max-width: 1200px) {
+  .mission-panel {
+    width: 900px;
+  }
+  .mission-planets {
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .mission-panel {
+    width: 700px;
+    padding: 2rem 0;
+  }
+  .mission-planets {
+    gap: 3rem;
+    row-gap: 3rem;
+  }
+  footer {
+    height: 3rem;
+    font-size: 0.825rem;
+  }
+  .time-taken {
+    padding: 2.5rem 0.5rem;
+    font-size: 1.75rem;
+    font-weight: 700;
+    width: 300px;
+    margin: 1.75rem auto 1.75rem auto;
+  }
+  .panel-decr {
+    word-spacing: -0.5rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .mission-panel {
+    width: 480px;
+    padding: 2rem 0;
+  }
+  .mission-planets {
+    gap: 3rem;
+    row-gap: 3rem;
+  }
+  .btn-fd-flcn {
+    font-size: 1rem;
+    padding: 0.75rem 1.25rem;
+  }
+  .panel-decr {
+    font-size: 1.5rem;
+    padding-bottom: 3rem;
+  }
+  .btn-cntr {
+    padding: 4rem 0 6rem 0;
+  }
+  .time-taken {
+    margin-top: 2.5rem;
+  }
+  footer {
+    height: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .mission-panel {
+    width: 300px;
+    padding: 2rem 0;
+    word-spacing: -4px;
+  }
+  .mission-planets {
+    gap: 3rem;
+    row-gap: 2rem;
+  }
+  .panel-decr {
+    font-size: 1.25rem;
+    padding-bottom: 2rem;
+    word-spacing: -0.5rem;
+  }
+  .time-taken {
+    padding: 2rem 0.5rem;
+    font-size: 1.25rem;
+    word-spacing: -4px;
+    width: 250px;
+    margin: 1.75rem auto 1.75rem auto;
+  }
+  .time-taken {
+    margin-top: 2.5rem;
+  }
+}

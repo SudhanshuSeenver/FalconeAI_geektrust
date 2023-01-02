@@ -1,0 +1,43 @@
+.planet {
+  width: 16%;
+}
+
+.planet-select {
+  padding: 0.25rem 0.5rem;
+  font-size: 1rem;
+  border-radius: 3px;
+  font-weight: 700;
+  border: 2px solid #181818;
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .planet {
+    width: 21%;
+  }
+}
+
+@media (max-width: 900px) {
+  .planet {
+    width: 27%;
+  }
+
+  /* .planet:last-child {
+  } */
+}
+
+@media (max-width: 700px) {
+  .planet {
+    width: 40%;
+  }
+  .planet-select {
+    padding: 0.125rem 0.25rem;
+    font-size: 0.825rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .planet {
+    width: 60%;
+  }
+}

@@ -1,0 +1,130 @@
+/* colors Success dark:#388e3c
+                  light: #66bb6a
+                  extra-light: #d7e8d8
+                  
+          Failure dark: #d32f2f
+                  light:#f6d5d5
+                  
+                  */
+
+.success,
+.failed {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem 2rem;
+  width: 680px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 5px;
+  /* margin: 0 0.5rem; */
+
+  /* display: flex;
+  flex-direction: column;
+  gap: 1rem; */
+}
+
+.success {
+  border-color: #388e3c;
+  box-shadow: 0 10px 20px #d7e8d8;
+}
+
+.failed {
+  border-color: #d32f2f;
+  box-shadow: 0 10px 20px #f6d5d5;
+}
+
+.scs-note,
+.fld-note {
+  font-size: 1.5rem;
+  padding: 0 0 1.25rem 0;
+}
+
+.scs-time-tkn {
+  padding: 1rem;
+  font-size: 1.125rem;
+  background-color: #d7e8d8;
+}
+
+.scs-planet {
+  color: #388e3c;
+  font-weight: 700;
+}
+
+.fld-np {
+  color: #d32f2f;
+  font-weight: 700;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border: 1px solid #333;
+  font-size: 1.25rem;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.try-again {
+  margin-top: 3rem;
+}
+
+@media (max-width: 700px) {
+  .success,
+  .failed {
+    width: 460px;
+    padding: 0.5rem 1rem;
+  }
+  .try-again {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .scs-note,
+  .fld-note {
+    font-size: 1.25rem;
+    padding: 0 0 1rem 0;
+  }
+  .fld-note {
+    font-size: 1rem;
+  }
+  .scs-time-tkn {
+    padding: 0.75rem;
+    font-size: 1rem;
+  }
+  .btn {
+    padding: 0.5rem 1.25rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .success,
+  .failed {
+    width: 325px;
+    padding: 0.5rem 0.75rem;
+  }
+  .try-again {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .scs-note,
+  .fld-note {
+    font-size: 1rem;
+    padding: 0 0 0.75rem 0;
+  }
+  .fld-note {
+    font-size: 0.75rem;
+  }
+
+  .scs-time-tkn {
+    padding: 0.5rem;
+    font-size: 0.875rem;
+  }
+  .btn {
+    padding: 0.25rem 0.75rem;
+    border: 1px solid #333;
+    font-size: 0.875rem;
+  }
+}
